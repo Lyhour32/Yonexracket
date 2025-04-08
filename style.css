@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.carousel {
+  .carousel-inner {
+    .carousel-item {
+      height: 500px;
+      img {
+        height: 500px;
+      }
+    }
+  }
+}
+.cards {
+  cursor: pointer;
+  height: 100%;
+  .img {
+    height: 80%;
+    img {
+      height: 100%;
+    }
+  }
+  .title {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    font-family: sans-serif;
+    .i {
+      display: flex;
+      gap: 3px;
+      i {
+        color: rgb(247, 247, 10);
+      }
+    }
+  }
+}
+
+.cards:hover {
+  transform: translate(5px, -5px);
+  transition: all ease-in-out 0.2s;
+  box-shadow: 0px 0px 10px rgb(211, 211, 211), 0px 0px 15px rgb(208, 208, 208);
+}
+footer {
+  background-color: rgba(30, 30, 30, 0.943);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  .qr-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h4 {
+      color: #fff;
+    }
+    img {
+      width: 160px;
+    }
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    h4 {
+      color: #fff;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      i {
+        font-family: sans-serif;
+      }
+    }
+  }
+  .end {
+    h4 {
+      color: #fff;
+      text-align: center;
+    }
+    .img {
+      display: flex;
+      gap: 3px;
+      img {
+        width: 52px;
+        height: 30px;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .carousel {
+    .carousel-inner {
+      .carousel-item {
+        height: 200px;
+        img {
+          height: 200px;
+        }
+      }
+    }
+  }
+  .cards {
+    .img {
+      margin-top: 10px;
+    }
+  }
+  footer {
+    height: auto;
+    .qr-img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .contact {
+      margin-top: 30px;
+    }
+    .end {
+      margin: 30px 0 30px 0;
+    }
+  }
+  .fluid {
+    .one {
+      .none {
+        display: block;
+      }
+      .right {
+        .card-right {
+          margin-top: 30px;
+        }
+        .buttom-one {
+          margin-top: 30px;
+        }
+      }
+    }
+    .none-two {
+      display: none;
+    }
+  }
+}
