@@ -129,9 +129,12 @@ footer {
   }
   .fluid {
     .one {
-      .none {
+      .cardss{
+        .none {
         display: block;
+        }
       }
+      
       .right {
         .card-right {
           margin-top: 30px;
